@@ -72,7 +72,7 @@ public class model {
     void percolate(){
         for(int i = 0; i < size; i++){
             tileArray[i].breakWalls();
-            tileArray[i].updateThisChunk(null);
+            System.out.print(i);
         }
         for(int i = 0; i < size; i++){
             colorArray[i] = tileArray[i].c;

@@ -40,26 +40,29 @@ public class tile{
         if(rnd.nextDouble() < chance && tUp != null){
             wUp = false;
             tUp.wDown = false;
+            tUp.updateThisChunk(this);
         }
         if(rnd.nextDouble() < chance && tRight != null){
             wRight = false;
             tRight.wLeft = false;
+            tRight.updateThisChunk(this);
         }
         if(rnd.nextDouble() < chance && tDown != null){
             wDown = false;
             tDown.wUp = false;
+            tDown.updateThisChunk(this);
         }
         if(rnd.nextDouble() < chance && tLeft != null){
             wLeft = false;
             tLeft.wRight = false;
+            tLeft.updateThisChunk(this);
         }
     }
 
     public void updateThisChunk(tile inTile){
-        
-        needsUpdate = false;
 
-        
+        this.needsUpdate = false;
+
         if(!wLeft && tLeft != null && inTile != tLeft && tLeft.needsUpdate){
             tLeft.c = this.c;
             tLeft.updateThisChunk(this);
@@ -77,7 +80,7 @@ public class tile{
             tDown.updateThisChunk(this);
         }
 
-        needsUpdate = true;
+        this.needsUpdate = true;
     }
 
 }
