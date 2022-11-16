@@ -1,18 +1,13 @@
-## Getting Started
+## Tile Percolation
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This is a project inspired by this youtube video: https://www.youtube.com/watch?v=a-767WnbaCQ&t=3s&ab_channel=SpectralCollective
 
-## Folder Structure
+I was fascinated by the concept as well as visuals, so I've tried my hand at making my own version: Tile Percolation
 
-The workspace contains two folders by default, where:
+There are a lot of features I plan on adding, right now it is the absolute bare-bones, functioning inefficiently and with a terrible user input system.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+# Plans:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- UI
+- Visually satisfying percolation process
+- Optimization
