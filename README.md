@@ -6,7 +6,7 @@ I was fascinated by the concept as well as visuals, so I've tried my hand at mak
 
 There are a lot of features I plan on adding, right now it is the absolute bare-bones, functioning inefficiently and with a terrible user input system.
 
-### Plans:
+## Plans:
 
 - UI
 - Visually satisfying percolation process
